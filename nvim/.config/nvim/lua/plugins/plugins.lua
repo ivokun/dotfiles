@@ -140,6 +140,17 @@ local plugins = {
 			},
 		},
 	},
+	{
+		"stevearc/conform.nvim",
+		opts = {
+			formatters = {
+				biome = {
+					require_cwd = true,
+					args = { "format", "--write", "--stdin-file-path", "$FILENAME" },
+				},
+			},
+		},
+	},
 	-- {
 	-- 	"CopilotC-Nvim/CopilotChat.nvim",
 	-- 	branch = "canary",
