@@ -22,7 +22,7 @@ return {
 				c = { "clang_format" },
 				rust = { "rustfmt" },
 				go = { "gofmt" },
-				python = { "autopep8", "reorder_python_imports" },
+				python = { "black" },
 				terraform = { "terraform_fmt" },
 				typescript = { "biome" },
 				typescriptreact = { "biome" },
@@ -33,7 +33,7 @@ return {
 			formatters = {
 				biome = {
 					require_cwd = true,
-					args = { "format --fix" },
+					args = { "format", "--write", "--stdin-file-path", "$FILENAME" },
 				},
 			},
 			format_on_save = true,
@@ -48,7 +48,7 @@ return {
 			linters_by_ft = {
 				sh = { "shellcheck" },
 				go = { "golangci_lint" },
-				python = { "flake8" },
+				python = { "ruff" },
 				-- Add more linters as desired for your filetypes
 			},
 			-- Optional on-attach for format/lint on save:

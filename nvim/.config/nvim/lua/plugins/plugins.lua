@@ -24,7 +24,8 @@ local plugins = {
 				"golangci-lint",
 				"pyright",
 				"python-lsp-server",
-				"autopep8",
+				"black",
+				"ruff",
 				"elixir-ls",
 				"rust-analyzer",
 			},
@@ -136,17 +137,6 @@ local plugins = {
 				{
 					name = "kraken",
 					path = "~/Documents/kraken",
-				},
-			},
-		},
-	},
-	{
-		"stevearc/conform.nvim",
-		opts = {
-			formatters = {
-				biome = {
-					require_cwd = true,
-					args = { "format", "--write", "--stdin-file-path", "$FILENAME" },
 				},
 			},
 		},

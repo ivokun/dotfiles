@@ -1,0 +1,46 @@
+# Cache directories
+**/.cache
+**/Cache
+**/.cargo/registry
+**/.npm
+**/.yarn/cache
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+
+# Browser caches
+**/.mozilla/firefox/*/cache2
+**/.config/google-chrome/*/Cache
+**/.config/chromium/*/Cache
+
+# Thumbnails and temporary files
+**/.thumbnails
+**/.local/share/Trash
+**/Trash
+**/.Trash
+*.tmp
+*.temp
+**/*~
+
+# Development build directories
+**/target/debug
+**/target/release
+**/build
+**/dist
+**/.git/objects
+
+# Large media working directories
+**/.local/share/Steam
+**/.steam
+
+# Virtual environments
+**/venv
+**/.venv
+**/virtualenv
+
+# Downloads (optional - you decide)
+# **/Downloads
+
+# Logs
+*.log
+**/logs
