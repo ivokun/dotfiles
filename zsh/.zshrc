@@ -160,6 +160,8 @@ zd() {
 open() {
   xdg-open "$@" >/dev/null 2>&1
 }
+export OMARCHY_PATH="$HOME/.local/share/omarchy"
+export PATH="$OMARCHY_PATH/bin:$PATH"
 
 ## OMARCHY FUNCTIONS
 # Compression
@@ -238,6 +240,7 @@ refresh-xcompose() {
 
 ## OMARCHY ENV
 
+export TERMINAL=alacritty
 # Editor used by CLI
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
