@@ -257,3 +257,4 @@ fi
 
 # opencode
 export PATH=/home/ivokun/.opencode/bin:$PATH
+eval "$(direnv hook zsh)"
