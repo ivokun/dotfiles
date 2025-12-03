@@ -258,3 +258,6 @@ fi
 # opencode
 export PATH=/home/ivokun/.opencode/bin:$PATH
 eval "$(direnv hook zsh)"
+
+# effect solutions (cli for effect ts docs)
+export PATH="/home/ivokun/.cache/.bun/bin:$PATH"
