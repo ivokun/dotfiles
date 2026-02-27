@@ -133,6 +133,7 @@ export PNPM_HOME="/home/ivokun/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 export PATH="/home/$USER/.local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 
@@ -261,3 +262,7 @@ eval "$(direnv hook zsh)"
 
 # effect solutions (cli for effect ts docs)
 export PATH="/home/ivokun/.cache/.bun/bin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

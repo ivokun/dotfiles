@@ -38,9 +38,52 @@
 **/.venv
 **/virtualenv
 
-# Downloads (optional - you decide)
-# **/Downloads
 
 # Logs
 *.log
 **/logs
+
+# Large media/games (re-downloadable)
+**/.local/share/Steam
+**/.steam/steam/steamapps/common
+**/.steam/steam/package
+**/.steam/steam/appcache
+**/.steam/steam/logs
+**/Games
+**/games
+
+# Downloads (optional - you decide)
+**/Downloads
+#**/Downloads/*.iso
+#**/Downloads/*.zip
+#**/Downloads/*.tar.gz
+
+# Development build artifacts
+**/target/debug
+**/target/release
+**/build
+**/dist
+**/.git/objects
+**/.parcel-cache
+**/.next
+**/out
+
+# Virtual environments
+**/venv
+**/.venv
+**/virtualenv
+**/.conda
+
+# Temporary files
+**/.thumbnails
+**/.local/share/Trash
+**/Trash
+**/.Trash
+*.tmp
+*.temp
+**/*~
+*.log
+**/logs
+
+# Video editing cache
+**/.local/share/DaVinciResolve/.cache
