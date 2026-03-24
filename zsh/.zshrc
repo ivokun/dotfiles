@@ -266,3 +266,12 @@ export PATH="/home/ivokun/.cache/.bun/bin:$PATH"
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+# Devenv background helper
+devenv-bg() {
+  devenv up > /tmp/devenv.log 2>&1 &
+  echo "devenv up started in background (PID: $!)"
+  echo "Logs: tail -f /tmp/devenv.log"
+}
+
+alias devenv-up='devenv up > /tmp/devenv.log 2>&1 &'
