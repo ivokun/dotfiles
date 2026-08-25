@@ -275,3 +275,5 @@ devenv-bg() {
 }
 
 alias devenv-up='devenv up > /tmp/devenv.log 2>&1 &'
+
+export PATH="$PATH:/nix/var/nix/profiles/default/bin"
